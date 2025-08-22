@@ -38,8 +38,10 @@ vector<int> firstlastpos(vector<int> &nums, int target)
         else
             end = mid - 1;
     }
-
-    return {first, last};
+    vector<int> a(2);
+    a[0] = first;
+    a[1] = last;
+    return a;
 }
 
 int main()
